@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<link href="c:\users\dell\desktop\c#\bookproject\bookproject.webapp\views\shared\_layout.cshtml.css" rel="stylesheet" />
+@model List<Book> // model içindeki book list çağırdık
+<h1 style="text-align:center;">KİTAPLAR</h1>
+
+@if (TempData["status"] !=null)
+{
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+       
+        <div>
+            @TempData["status"]
+        </div>
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-white" style="text-align:center;">Id</th>
+            <th class="text-white" style="text-align:center;">Kitabın İsmi</th>
+            <th class="text-white" style="text-align:center;">Yazarı</th>
+            <th class="text-white" style="text-align:center;">Yayın Evi</th>
+            <th class="text-white" style="text-align:center;">Yayın Yılı</th>
+            <th class="text-white" style="text-align:center;">Konusu</th>
+            <th class="text-white" style="text-align:center;">Fiyatı</th>
+            <th class="text-white" style="text-align:center;">İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model) // değerleri ekrana basmak için
+        {
+            <tr>
+                <td class="text-white">@item.Id</td>
+                <td class ="text-white">@item.Name</td>
+                <td class="text-white">@item.Author</td>
+                <td class="text-white">@item.Publisher</td>
+                <td class="text-white">@item.Year</td>
+                <td class="text-white">@item.Description</td>
+                <td class="text-white">@item.Price.ToString("N2")TL</td>
+                <td><a asp-controller="books" asp-action="remove" asp-route-id="@item.Id" class="text-white" style="text-decoration: none;">SİL</a> </td>
+                <td><a asp-controller="books" asp-action="update" asp-route-id="@item.Id" class="text-white" style="text-decoration:none;">GÜNCELLE</a> </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

@@ -1,0 +1,44 @@
+﻿body {
+    background-image: url('https://dusunbil.com/wp-content/uploads/2016/09/libraries.jpg'); /* Kullanmak istediğiniz resmin yolunu belirtin */
+    background-size: cover; /* Resmi ekranın tamamını kaplayacak şekilde boyutlandırın */
+    background-repeat: no-repeat; /* Resmi yinelemeyi engelleyin */
+    background-attachment: fixed; /* Arka planın sabit kalmasını sağlayın */
+    background-position: center; /* Resmi ortalamak için kullanın */
+    color: white; /* Metin rengini beyaz olarak ayarlayın ya da arkaplan resmine uygun bir renk seçin */
+}
+
+.container-fluid {
+    background-color: saddlebrown;
+    height:50px;
+}
+.nav-item {
+    display: flex;
+    padding-right: 40px;
+    font-size: 18px;
+    font-weight:400;
+    font-family:monospace;
+}
+.container {
+    background-image: url('https://dusunbil.com/wp-content/uploads/2016/09/libraries.jpg'); /* Kullanmak istediğiniz resmin yolunu belirtin */
+    background-size: cover;  /*Resmi ekranın tamamını kaplayacak şekilde boyutlandırın*/ 
+    color: white;
+}
+.form-label{
+    color: white;
+}
+.table{
+    color: white;
+}
+.form-control {
+    width: 130px; /* Arama butonunun genişliğini ayarlayın */
+    border-radius: 10px;
+}
+button{
+    color: white;
+    border-color:white;
+}
+
+button:hover{
+    background-color:burlywood;
+    color:brown;
+}

@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+}
+<style>
+        button:hover {
+            background-color: burlywood;
+            color: brown;
+        }
+</style>
+<link href="c:\users\dell\desktop\c#\bookproject\bookproject.webapp\views\shared\_layout.cshtml.css" rel="stylesheet" />
+
+@model Book
+<h1 style="text-align:center;">KİTAP EKLEME</h1>
+<form asp-controller="Books" asp-action="Add" method="post">
+    <div class="mb-3 text-white">
+        <label for="exampleInputEmail1" class="form-label">Kitabın Adı: </label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Yazarı: </label>
+        <input type="text" class="form-control" asp-for="Author">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Yayın Evi: </label>
+        <input type="text" class="form-control" asp-for="Publisher">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Yayın Yılı: </label>
+        <input type="text" class="form-control" asp-for="Year">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Kitabın Konusu: </label>
+        <input type="text" class="form-control" asp-for="Description">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Kitabın Fiyatı: </label>
+        <input type="text" class="form-control" asp-for="Price">
+    </div>
+    <button type="submit" class="btn btn-outline text-white">KAYDET</button>
+</form>
+
+

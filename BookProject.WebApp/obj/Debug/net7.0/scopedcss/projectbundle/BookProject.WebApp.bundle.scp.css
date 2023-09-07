@@ -1,0 +1,45 @@
+/* _content/BookProject.WebApp/Views/Shared/_Layout.cshtml.rz.scp.css */
+body[b-q1alykqknq] {
+    background-image: url('https://dusunbil.com/wp-content/uploads/2016/09/libraries.jpg'); /* Kullanmak istediğiniz resmin yolunu belirtin */
+    background-size: cover; /* Resmi ekranın tamamını kaplayacak şekilde boyutlandırın */
+    background-repeat: no-repeat; /* Resmi yinelemeyi engelleyin */
+    background-attachment: fixed; /* Arka planın sabit kalmasını sağlayın */
+    background-position: center; /* Resmi ortalamak için kullanın */
+    color: white; /* Metin rengini beyaz olarak ayarlayın ya da arkaplan resmine uygun bir renk seçin */
+}
+
+.container-fluid[b-q1alykqknq] {
+    background-color: saddlebrown;
+    height:50px;
+}
+.nav-item[b-q1alykqknq] {
+    display: flex;
+    padding-right: 40px;
+    font-size: 18px;
+    font-weight:400;
+    font-family:monospace;
+}
+.container[b-q1alykqknq] {
+    background-image: url('https://dusunbil.com/wp-content/uploads/2016/09/libraries.jpg'); /* Kullanmak istediğiniz resmin yolunu belirtin */
+    background-size: cover;  /*Resmi ekranın tamamını kaplayacak şekilde boyutlandırın*/ 
+    color: white;
+}
+.form-label[b-q1alykqknq]{
+    color: white;
+}
+.table[b-q1alykqknq]{
+    color: white;
+}
+.form-control[b-q1alykqknq] {
+    width: 130px; /* Arama butonunun genişliğini ayarlayın */
+    border-radius: 10px;
+}
+button[b-q1alykqknq]{
+    color: white;
+    border-color:white;
+}
+
+button:hover[b-q1alykqknq]{
+    background-color:burlywood;
+    color:brown;
+}
